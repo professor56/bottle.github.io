@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bottle</title>
+	<style type="text/css">
+		h1{
+			background-color: black;
+			width: 100%;
+			height: 66px;
+			color: white;
+			position: relative;
+			top: 0px;
+			left: 0px;
+		}
+		#b{
+			width: 70%;
+		}
+		#s{
+			width: 70%;
+		}
+		#lm{
+			width: 70%;
+			height: 500px;
+			background-color: blue;
+		}
+		#opp{
+			background-color: red;
+			width: 25%;
+			height: 35px;
+		}
+		#res{
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+<h1>BottleCount</h1>
+<hr>
+<form>
+	How many Bottle<br><input type="text" name="" id="b"><br>
+	How many Stores<br><input type="text" name="" id="s"><br><br>
+	<input type="button" name="" id="opp" value="Calculate" onclick="cl()">
+</form>
+<div id="lm">
+	<h2 id="res"></h2>
+</div>
+<script type="text/javascript">
+	function cl() {
+		// body...
+		var b =document.getElementById('b').value;
+		var s = document.getElementById('s').value;
+		var r = b*s
+		document.getElementById('res').innerText='Every store has ' + r + ' Bottles'
+	}
+</script>
+</body>
+</html>
