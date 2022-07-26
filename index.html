@@ -1,60 +1,143 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bottle</title>
-	<style type="text/css">
-		h1{
-			background-color: black;
-			width: 100%;
-			height: 66px;
-			color: white;
-			position: relative;
-			top: 0px;
-			left: 0px;
-		}
-		#b{
-			width: 70%;
-		}
-		#s{
-			width: 70%;
-		}
-		#lm{
-			width: 70%;
-			height: 500px;
-			background-color: blue;
-		}
-		#opp{
-			background-color: red;
-			width: 25%;
-			height: 35px;
-		}
-		#res{
-			color: white;
-		}
+    <head>
+        <style>
+            
+            body{
+                background-color: black;
+            }
+            #yi{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 50px;
+                top: 20px;
+            }
+            #ho{
+                color: white;
+                position: absolute;
+                left: 98px;
+                font-family: Times New Roman, Times, serif, sans-serif;
+                font-size: 32px;
+            }
+            #k{
+                position: absolute;
+                left: 25%;
+                top: 38px;
+                width: 42vw;
+                height: 6vh;
+                font-size: 16px;
+                
+                background-color: black;
+                border: 1px gray solid;
+            }
+            #hm{
+                background-color: gray;
+                width: 4vw;
+                height: 7vh;
+                position: absolute;
+                left: 67.4%;
+                top: 4.8%;
+            }
+            #pll{
+                position: absolute;
+                left: 68%;
+                width: 30px;
+                height: 30px;
+                top: 6%;
+            }
+            .ol{
+                width:8vw;
+                height: 8vh;
+                position: absolute;
+                left: 89%;
+                top: 4.4%;
+                border: 5px skyblue solid;
+                background-color: black;
+                color: skyblue;
+                font-size: 18px;
+            }
+            #olp{
+                border: 1px gray solid;
+                width:78vw;
+                position: absolute;
+                top: 19%;
+                left: 20%;
+            }
+            h2{
+                color: white;
+                font-size: 18px;
+               
+           }
+           #nk{
+                position: absolute;
+                top:8%;
+                left: 5%;
+                padding-top: 20px;
+                overflow: hidden;
+                overflow-y: auto;
+                height: 88vh;
+                border-bottom: 1px grey solid;
+                  
+            }
+            .op{
+                position: absolute;
+                top: 50%;
+                width:8vw;
+                height: 8vh;
+                
+                border: 5px skyblue solid;
+                background-color: black;
+                color: skyblue;
+                font-size: 18px;
+            }
+            #pp{
+                color: grey;
+            }
+            h2:hover{
+                background-color: grey;
+            }
+        
+        </style>
+        <body>
+            <div id="h">
+                   <img src="y.png" id="yi">
+                   <h1 id="ho"><b>YouTube</b></h1>
+                   <form>
+                    <input type="text" id="k" placeholder="Search">
+                    <Input type="button" id="hm">
+                   </form>
+                    <img src="sc.png" id="pll">    
+                
+                    <button class="ol">SIGN IN</button>
+                
+            </div>
+            <div id="olp">
+            </div>
+             <div id="nk">
+                <h2>Home</h2>
+                <h2>Explore</h2>
+                <h2>Shorts</h2>
+                <h2>Subscriptions</h2>
+                <hr>
+                <h2>Library</h2>
+                <h2>History</h2>
+                <hr>
+                <h2>Sign in to like videos,<br> comment, and scribe</h2><br>
+                <button class="op">SIGN IN</button><br><br><br>
+                <hr>
+                <h2 id="pp">Explore</h2>
+                <h2>Music</h2>
+                <h2>Sport</h2>
+                <h2>Gaming</h2>
+                <h2>News</h2>
+                <h2>Live</h2>
+                <h2>Fashion & Beauty</h2>
+                <h2>Learning</h2>
+                <h2>Spotlight</h2>
 
-	</style>
-</head>
-<body>
-<h1>BottleCount</h1>
-<hr>
-<form>
-	How many Bottle<br><input type="text" name="" id="b"><br>
-	How many Stores<br><input type="text" name="" id="s"><br><br>
-	<input type="button" name="" id="opp" value="Calculate" onclick="cl()">
-</form>
-<div id="lm">
-	<h2 id="res"></h2>
-</div>
-<script type="text/javascript">
-	function cl() {
-		// body...
-		var b =document.getElementById('b').value;
-		var s = document.getElementById('s').value;
-		var r = b*s
-		document.getElementById('res').innerText='Every store has ' + r + ' Bottles'
-	}
-</script>
-</body>
+             </div>
+                  
+        </body>
+    </head>
 </html>
